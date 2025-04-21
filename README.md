@@ -58,6 +58,16 @@
 ---
 
 ## 🚀 Getting Started
+Open the project in IntelliJ IDEA or your preferred IDE.
+
+Make sure JavaFX is configured properly.
+
+Run the Main.java or EverGreenFinance.java file.
+
+📄 License
+This project was created for academic purposes at Farmingdale State College under the guidance of Prof. K. Moorning. Redistribution is permitted with credit.
+
+
 
 1. Clone the repository:
    ```bash
