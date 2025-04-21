@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="com.bank.Controllers.OptionsController" style="-fx-background-color: lightgreen; -fx-padding: 5 0 20 0;">
+
+    <VBox alignment="CENTER" >
+      <Label text="Evergreen Finanace" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #FF1493;"/>
+      <Label text="Customer Name" style="-fx-font-size: 14; -fx-font-weight: bold;" fx:id="nameLabel" />
+    </VBox>
+
+     <StackPane style="-fx-padding: 10 200 0 200;">
+        <VBox alignment="CENTER" spacing="5.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-radius: 20; -fx-border-radius: 20;-fx-padding: 5 0 20 0; -fx-background-color: #F4ECD8;">
+        <Label text="Balance" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #FF1493;" fx:id="balanceLabel" />
+        <Label text="Account Number" style="-fx-font-weight: bold;" fx:id="accountNumberLabel" />
+        <Label text="Account Type" style="-fx-font-weight: bold;" fx:id="accountTypeLabel" />
+        <Label text="Branch: 123 Main Street, Cityvil1l" style="-fx-font-weight: bold;" />
+         </VBox>
+    </StackPane>     
+
+    <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20 0 20 0;">
+        <Button text="Deposit Funds" onAction="#depositButtonClicked" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-color: #4CAF50; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+
+        <Button text="Withdraw Funds" onAction="#withdrawButtonClicked" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-color: #FF5722; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+
+        <Button text="Process Transfer" onAction="#transferButtonClicked" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-color: #2196F3; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </HBox>
+
+    <VBox alignment="CENTER" spacing="20.0" style="-fx-padding: 10 0 0 0;">
+       <Button text="Logout" onAction="#processLogoutButtonClicked" 
+        style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-color: #FF0000; -fx-text-fill: white;">
+        </Button>
+    </VBox>
+
+</VBox>

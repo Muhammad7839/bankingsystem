@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="40.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="com.bank.Controllers.LoginController" style="-fx-background-color: lightgreen;">
+
+    <VBox alignment="CENTER" style="-fx-padding: 0 0 10 0;">
+      <Label text="Evergreen Finanace" style="-fx-font-size: 20; -fx-font-weight: bold; 
+      -fx-text-fill: #FF1493;"/>
+    </VBox>
+
+    <VBox spacing="5.0" style="-fx-padding: 25 0 0 0;">
+        <Label text="Customer ID" style="-fx-font-weight: bold;" />
+        <TextField fx:id="customerIdField" promptText="xxxxx" />
+    </VBox>
+
+    <VBox spacing="5.0" style="-fx-padding: 0 0 20 0;">
+        <Label text="PIN" style="-fx-font-weight: bold;"/>
+        <PasswordField fx:id="pinField" promptText="####" />
+    </VBox>
+    
+    <VBox alignment="CENTER" spacing="20.0">
+      <Button fx:id="loginButton" text="Login" onAction="#loginButtonClicked"
+              style="-fx-font-size: 14; -fx-font-weight: bold;" />
+      <Label fx:id="messageLabel" style="-fx-text-fill: red;" />
+    </VBox>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
